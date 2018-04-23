@@ -2,7 +2,20 @@ version: '2'
 services:
   web:
     build: .
+    command: start
+    networks:
+      - counter
     ports:
      - "5000:5000"
   redis:
     image: "redis:alpine"
+    networks:
+      - counter
+    volumes:
+      - redis-data:/data
+
+volumes:
+  redis-data:
+
+networks:
+  counter:
