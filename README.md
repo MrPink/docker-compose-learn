@@ -3,19 +3,19 @@
 ![alt text](https://i1.wp.com/foxutech.com/wp-content/uploads/2017/06/docker-compose1.png?fit=50%2C400&ssl=1 "docker-compose")
 
 To run docker-compose and bring the services alive we need to run
-..* `docker-compose up --build`
+* `docker-compose up --build`
 
 This will download or build the required images in this case download the Redis image and build the Python image with our `app.py`.
 
 To view the current running containers with `docker-compose` use the command
 
-..* `docker-compose ps`
+* `docker-compose ps`
 
 If both of the containers have the state as `up` you can take a look at <http://127.0.0.1:5000/> and see it in action.
 
 Take a look inside the Dockerfile
-..* Where is the Docker image being downloaded from?
-..* Is the Dockerfile using a Entrypoint or a Command?
+* Where is the Docker image being downloaded from?
+* Is the Dockerfile using a Entrypoint or a Command?
 
 ------------------------------------------------------
 
