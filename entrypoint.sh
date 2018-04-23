@@ -12,7 +12,7 @@ show_help() {
 
 case "$1" in
   start )
-    python app.py
+    python /code/app.py
   ;;
   sh )
     /bin/sh
