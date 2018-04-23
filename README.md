@@ -15,18 +15,20 @@ If the Dockerfile is not using a `entrypoint` modify the Dockerfile to use one. 
 
 The `entrypoint.sh` should consist of a script that looks like
 
-```!#/bin/sh
+```
+!#/bin/sh
 
-	case "$1" in
-    bash )
-        bash
-    ;;
+case "$1" in
+bash )
+    bash
+;;
 
-    start )
-        python app.py
-    ;;
+start )
+    python app.py
+;;
 
-	esac
+esac
+
 ```
 
 This should be in the root of the directory.
